@@ -26,3 +26,19 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow(int leftCol, int size){
+    print_triangle(leftCol, size);
+    
+    /* attempted to reuse print_square but couldnt 
+       add space before square to line up w/ middle
+       of triangle
+    */
+    int endCol = leftCol + size;
+    for (int row = 0; row < size; row++){
+        int col;
+        for(int i = 0; i <= size/2; i++) putchar(' ');
+        for (col = 0; col < leftCol; col++) putchar(' ');
+        for (       ; col < endCol;  col++) putchar('*');
+        putchar('\n');
+    }
+}
