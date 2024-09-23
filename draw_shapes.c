@@ -29,10 +29,7 @@ void print_triangle(int leftCol, int size)
 void print_arrow(int leftCol, int size){
     print_triangle(leftCol, size);
     
-    /* attempted to reuse print_square but couldnt 
-       add space before square to line up w/ middle
-       of triangle
-    */
+    /* prints bottom of arrow centered under triangle */
     int endCol = leftCol + size;
     for (int row = 0; row < size; row++){
         int col;
