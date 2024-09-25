@@ -1,5 +1,7 @@
 # comments begin with #
 
+# note for example
+
 # for convenience, define variable $(OBJS) to list of object files
 OBJS= draw_shapes.o draw_chars.o 5x7-font.o 8x12-font.o uimain.o # added 8x12 font
 
